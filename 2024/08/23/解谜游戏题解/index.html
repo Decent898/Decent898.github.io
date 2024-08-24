@@ -13,21 +13,22 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2024/08/23/first-trial/"/>
+    <link rel="canonical" href="http://example.com/2024/08/23/解谜游戏题解/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="hellothis is my first trial of writing a blogI hope I can write more blogs in the futureI will try my best to write more blogsI will try my best to write more blogsI will try my best to write more blo">
+        <meta name="description" content="密室逃脱密码锁问题题解题目描述小张在密室逃脱的游戏中需要通过解开密码锁来获取线索。密码锁是一个 n x m 的网格，每个格子里有一个按钮和一个灯。初始状态下，灯可能是亮的或者灭的。 按下某个按钮会导致该按钮的灯以及其上下左右相邻按钮的灯状态发生翻转（亮变灭，灭变亮）。小张的任务是通过最少次数的按键，使得所有灯全部熄灭。 输入 第一行包含两个整数 n 和 m，表示网格的行数和列数。 接下来的 n 行">
 <meta property="og:type" content="article">
-<meta property="og:title" content="First_Trial">
-<meta property="og:url" content="http://example.com/2024/08/23/First-Trial/index.html">
+<meta property="og:title" content="解谜游戏题解">
+<meta property="og:url" content="http://example.com/2024/08/23/%E8%A7%A3%E8%B0%9C%E6%B8%B8%E6%88%8F%E9%A2%98%E8%A7%A3/index.html">
 <meta property="og:site_name" content="DecEric的Blog">
-<meta property="og:description" content="hellothis is my first trial of writing a blogI hope I can write more blogs in the futureI will try my best to write more blogsI will try my best to write more blogsI will try my best to write more blo">
+<meta property="og:description" content="密室逃脱密码锁问题题解题目描述小张在密室逃脱的游戏中需要通过解开密码锁来获取线索。密码锁是一个 n x m 的网格，每个格子里有一个按钮和一个灯。初始状态下，灯可能是亮的或者灭的。 按下某个按钮会导致该按钮的灯以及其上下左右相邻按钮的灯状态发生翻转（亮变灭，灭变亮）。小张的任务是通过最少次数的按键，使得所有灯全部熄灭。 输入 第一行包含两个整数 n 和 m，表示网格的行数和列数。 接下来的 n 行">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-08-23T07:33:27.000Z">
-<meta property="article:modified_time" content="2024-08-23T07:33:42.418Z">
+<meta property="article:modified_time" content="2024-08-24T05:29:07.971Z">
 <meta property="article:author" content="DecEric">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
     
     
@@ -40,7 +41,7 @@
     
     <title>
         
-            First_Trial -
+            解谜游戏题解 -
         
         Decorate Our World
     </title>
@@ -427,7 +428,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">First_Trial</h1>
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">解谜游戏题解</h1>
                 </div>
             
             </div>
@@ -455,13 +456,24 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-08-23 15:33:42</span>
-            <span class="mobile">2024-08-23 15:33:42</span>
+            <span class="desktop">2024-08-24 13:29:07</span>
+            <span class="mobile">2024-08-24 13:29:07</span>
             <span class="hover-info">更新</span>
         </span>
     
 
     
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E7%AE%97%E6%B3%95/">算法</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -483,7 +495,27 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <p>hello<br>this is my first trial of writing a blog<br>I hope I can write more blogs in the future<br>I will try my best to write more blogs<br>I will try my best to write more blogs<br>I will try my best to write more blogs<br>I will try my best to write more blogs<br>I will try my best to write more blogs<br>I will try my best to write more blogs<br>I will try my best to write more blogs<br>I will try my best to write more blogs<br>I will try my best to write more blogs<br>I will try my best to write more blogs</p>
+            <h1 id="密室逃脱密码锁问题题解"><a href="#密室逃脱密码锁问题题解" class="headerlink" title="密室逃脱密码锁问题题解"></a>密室逃脱密码锁问题题解</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>小张在密室逃脱的游戏中需要通过解开密码锁来获取线索。密码锁是一个 <code>n x m</code> 的网格，每个格子里有一个按钮和一个灯。初始状态下，灯可能是亮的或者灭的。</p>
+<p>按下某个按钮会导致该按钮的灯以及其上下左右相邻按钮的灯状态发生翻转（亮变灭，灭变亮）。小张的任务是通过最少次数的按键，使得所有灯全部熄灭。</p>
+<h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><ul>
+<li>第一行包含两个整数 <code>n</code> 和 <code>m</code>，表示网格的行数和列数。</li>
+<li>接下来的 <code>n</code> 行，每行是一个长度为 <code>m</code> 的01字符串，<code>0</code> 表示灯灭，<code>1</code> 表示灯亮。</li>
+</ul>
+<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><ul>
+<li>一行一个整数，表示最少按几次按钮可以把灯全部熄灭。</li>
+</ul>
+<h2 id="题解思路"><a href="#题解思路" class="headerlink" title="题解思路"></a>题解思路</h2><h3 id="1-状态表示"><a href="#1-状态表示" class="headerlink" title="1. 状态表示"></a>1. 状态表示</h3><p>我们使用一个 <code>n x m</code> 的二维数组来表示灯的状态，1 表示灯亮，0 表示灯灭。每按下一个按钮，都会影响到该按钮以及其上下左右四个方向的按钮。</p>
+<h3 id="2-枚举第一行的所有按法"><a href="#2-枚举第一行的所有按法" class="headerlink" title="2. 枚举第一行的所有按法"></a>2. 枚举第一行的所有按法</h3><p>由于每个按钮可以按或不按，因此第一行的所有可能按法共有 (2^m) 种。我们可以通过枚举所有这些可能性来尝试找到一种按法，使得在最少按键次数下，最终所有灯都熄灭。</p>
+<h3 id="3-动态模拟按按钮"><a href="#3-动态模拟按按钮" class="headerlink" title="3. 动态模拟按按钮"></a>3. 动态模拟按按钮</h3><p>对于每一种按法，计算它对第一行产生的影响，并推导出对整个网格的影响。我们逐行更新网格的灯状态，直到处理完最后一行。如果最后一行的灯全部熄灭，则该按法是有效的。</p>
+<h3 id="4-选择最优解"><a href="#4-选择最优解" class="headerlink" title="4. 选择最优解"></a>4. 选择最优解</h3><p>在所有可能的第一行按法中，选择使灯全部熄灭的按键次数最少的一种，作为最终的解。</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p>以下是基于上述思路的代码实现：</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;climits&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n, m;</span><br><span class="line"><span class="type">int</span> grid[<span class="number">16</span>][<span class="number">16</span>];  <span class="comment">// 存储初始灯的状态</span></span><br><span class="line"><span class="type">int</span> tmp[<span class="number">16</span>][<span class="number">16</span>];   <span class="comment">// 用于模拟按钮按下后的灯的状态</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 按下某个按钮后，改变其四周和自己的灯状态</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">flip</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123;</span><br><span class="line">    tmp[x][y] ^= <span class="number">1</span>; <span class="comment">// 翻转自己</span></span><br><span class="line">    <span class="keyword">if</span> (x &gt; <span class="number">0</span>) tmp[x<span class="number">-1</span>][y] ^= <span class="number">1</span>; <span class="comment">// 上</span></span><br><span class="line">    <span class="keyword">if</span> (x &lt; n<span class="number">-1</span>) tmp[x<span class="number">+1</span>][y] ^= <span class="number">1</span>; <span class="comment">// 下</span></span><br><span class="line">    <span class="keyword">if</span> (y &gt; <span class="number">0</span>) tmp[x][y<span class="number">-1</span>] ^= <span class="number">1</span>; <span class="comment">// 左</span></span><br><span class="line">    <span class="keyword">if</span> (y &lt; m<span class="number">-1</span>) tmp[x][y<span class="number">+1</span>] ^= <span class="number">1</span>; <span class="comment">// 右</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> minSteps = INT_MAX;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 枚举第一行的按法，共有2^m种可能</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> firstRow = <span class="number">0</span>; firstRow &lt; (<span class="number">1</span> &lt;&lt; m); ++firstRow) &#123;</span><br><span class="line">        <span class="comment">// 将初始状态复制到临时状态</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i)</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; ++j)</span><br><span class="line">                tmp[i][j] = grid[i][j];</span><br><span class="line">        </span><br><span class="line">        <span class="type">int</span> steps = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 应用第一行的按法</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; ++j) &#123;</span><br><span class="line">            <span class="keyword">if</span> (firstRow &amp; (<span class="number">1</span> &lt;&lt; j)) &#123;</span><br><span class="line">                <span class="built_in">flip</span>(<span class="number">0</span>, j);</span><br><span class="line">                steps++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 根据第一行的结果，决定后续的按法</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; ++j) &#123;</span><br><span class="line">                <span class="keyword">if</span> (tmp[i<span class="number">-1</span>][j] == <span class="number">1</span>) &#123; <span class="comment">// 如果上一行的灯还亮着，就需要按当前这一行的按钮</span></span><br><span class="line">                    <span class="built_in">flip</span>(i, j);</span><br><span class="line">                    steps++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 检查最后一行是否全部熄灭</span></span><br><span class="line">        <span class="type">bool</span> allOff = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; ++j) &#123;</span><br><span class="line">            <span class="keyword">if</span> (tmp[n<span class="number">-1</span>][j] == <span class="number">1</span>) &#123;</span><br><span class="line">                allOff = <span class="literal">false</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (allOff) &#123;</span><br><span class="line">            minSteps = <span class="built_in">min</span>(minSteps, steps);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> minSteps;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">        string line;</span><br><span class="line">        cin &gt;&gt; line;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; m; ++j) &#123;</span><br><span class="line">            grid[i][j] = line[j] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; <span class="built_in">solve</span>() &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h2><ul>
+<li>枚举第一行的可能性为 (2^m)，每次按法的复杂度为 (O(n \times m))。</li>
+<li>总时间复杂度为 (O(2^m \times n \times m))，在题目给定的限制范围内可行。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过枚举第一行的按法并动态模拟按按钮后的网格变化，我们能够找到最少按键次数以熄灭所有灯。这个方法在时间复杂度上是可接受的，并能够高效地解决问题。</p>
 
         </div>
 
@@ -491,18 +523,18 @@
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> First_Trial</li>
+        <li><strong>标题:</strong> 解谜游戏题解</li>
         <li><strong>作者:</strong> DecEric</li>
         <li><strong>创建于
                 :</strong> 2024-08-23 15:33:27</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-08-23 15:33:42
+                    :</strong> 2024-08-24 13:29:07
             </li>
         
         <li>
-            <strong>链接:</strong> https://redefine.ohevan.com/2024/08/23/First-Trial/
+            <strong>链接:</strong> https://redefine.ohevan.com/2024/08/23/解谜游戏题解/
         </li>
         <li>
             <strong>
@@ -521,20 +553,43 @@
         
 
         
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E7%AE%97%E6%B3%95/">#算法</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
 
         
 
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2024/08/23/First-Trial/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">First_Trial</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
                 
                     <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="next"
                         rel="next"
-                        href="/2024/08/23/%E8%A7%A3%E8%B0%9C%E6%B8%B8%E6%88%8F%E9%A2%98%E8%A7%A3/"
+                        href="/2024/08/23/1/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">解谜游戏题解</span>
+                                <span class="post-nav-title-item"></span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -598,8 +653,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">First_Trial</div>
-        
+        <div class="page-title">解谜游戏题解</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%86%E5%AE%A4%E9%80%83%E8%84%B1%E5%AF%86%E7%A0%81%E9%94%81%E9%97%AE%E9%A2%98%E9%A2%98%E8%A7%A3"><span class="nav-text">密室逃脱密码锁问题题解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5"><span class="nav-text">输入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA"><span class="nav-text">输出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E8%A7%A3%E6%80%9D%E8%B7%AF"><span class="nav-text">题解思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%8A%B6%E6%80%81%E8%A1%A8%E7%A4%BA"><span class="nav-text">1. 状态表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%9E%9A%E4%B8%BE%E7%AC%AC%E4%B8%80%E8%A1%8C%E7%9A%84%E6%89%80%E6%9C%89%E6%8C%89%E6%B3%95"><span class="nav-text">2. 枚举第一行的所有按法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%8A%A8%E6%80%81%E6%A8%A1%E6%8B%9F%E6%8C%89%E6%8C%89%E9%92%AE"><span class="nav-text">3. 动态模拟按按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E9%80%89%E6%8B%A9%E6%9C%80%E4%BC%98%E8%A7%A3"><span class="nav-text">4. 选择最优解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90"><span class="nav-text">复杂度分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">总结</span></a></li></ol></li></ol>
 
     </div>
 </div>
